@@ -1,12 +1,12 @@
 -- Basic setup
-CREATE TABLE students (
+CREATE TABLE pupils (
   name varchar(40),
   favourite_subject varchar(40)
 );
 
-INSERT INTO students VALUES ('jozko', 'vlastiveda');
-INSERT INTO students VALUES ('ferko', 'dejepis');
-INSERT INTO students VALUES ('dezko', 'prirodopis');
+INSERT INTO pupils VALUES ('jozko', 'vlastiveda');
+INSERT INTO pupils VALUES ('ferko', 'dejepis');
+INSERT INTO pupils VALUES ('dezko', 'prirodopis');
 
 -- Rest
 
@@ -21,4 +21,4 @@ INSERT INTO thesis VALUES ('jozko', 5 ,'Kde bolo, tam bolo2...');
 INSERT INTO thesis VALUES ('ferko', 1 ,'Kde bolo, tam bolo...');
 INSERT INTO thesis VALUES ('dezko', 1 ,'12345678');
 
--- SELECT * FROM students JOIN thesis ON students.name = thesis.student;
+-- SELECT * FROM pupils JOIN thesis ON pupils.name = thesis.student;

@@ -1,9 +1,8 @@
 1. Install postgres, with pgadmin locally
 2. Install globally typeorm cli `npm i -g typeorm`
 3. Setup typeorm project
-    * Initialize empty project with `typeorm init`
-        * replace `mysql` driver with `pg`
-    * Setup manually
+    * a) Initialize empty project with `typeorm init --database postgres`
+    * b) Setup manually
         * `npm init`
         * `tsc --init`
             * `"experimentalDecorators": true,`

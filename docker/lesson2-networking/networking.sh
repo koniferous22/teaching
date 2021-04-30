@@ -3,7 +3,7 @@
 echo "DO NOT EXECUTE THIS FILE, IT'S JUST .sh EXTENSION FOR COMMAND HIGHLIGHTING"
 exit 1
 
-# NOTE: examples use project in simple-setup or new can be created by running `typeorm init --database postgres` & manually creating Dockerfile
+# NOTE: examples use project in basic-setup or new can be created by running `typeorm init --database postgres` & manually creating Dockerfile
 
 
 #--------------------------------------------------------------------------------
@@ -11,7 +11,7 @@ exit 1
 
 # 1st attempt run postgres image and assume it can communicate with api
 
-cd simple-setup
+cd basic-setup
 docker build --tag test-docker-api .
 docker run --name some-api test-docker-api
 
